@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Web Search Trial</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a>Web Sreach Trial</a>
+            </div>
+            <nav>
+                <ul id='Items'>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Carrer</a></li>
+                    <li><a href='#'>Contact Us</a></li>
+                    <li><button class='Webbtn' onclick="document.getElementById('Web-form').style.display='block'" 
+                    style="width:auto;">Web Search</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id='Web-form'class='Web-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='Web()'class='toggle-btn'>WEB SEARCH</button>
+                </div>
+                <form id='Web' class='input-group-Web'>
+                    <input type='text'class='input-field'placeholder='Web Search' required >
+		    <button type='submit'class='submit-btn'>Click to Search</button>
+		 </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('Web');
+		
+		function Web()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('Web-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
